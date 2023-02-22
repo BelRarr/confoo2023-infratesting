@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="25" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2023-02-21" time="21:39:58">
+  <environment clr-version="4.0.30319.42000" user-domain="DESKTOP-T21S24M" cwd="C:\Documents\MVP\Confoo\2023\confoo2023-infratesting" platform="Microsoft Windows 11 Professionnel|C:\WINDOWS|\Device\Harddisk0\Partition3" machine-name="DESKTOP-T21S24M" nunit-version="2.5.8.0" os-version="10.0.22000" user="tidja" />
+  <culture-info current-culture="fr-CA" current-uiculture="fr-CA" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="7.5574" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Documents\MVP\Confoo\2023\confoo2023-infratesting\Tests\confoo.tests.ps1" executed="True" result="Success" success="True" time="7.5574" asserts="0" description="C:\Documents\MVP\Confoo\2023\confoo2023-infratesting\Tests\confoo.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Validating the resource group" executed="True" result="Success" success="True" time="0.1657" asserts="0" description="Validating the resource group">
+            <results>
+              <test-case description="Resource group name is correct" name="Validating the resource group.Resource group name is correct" time="0.144" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="The location (region) of the resource group is correct" name="Validating the resource group.The location (region) of the resource group is correct" time="0.0071" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Validating the Service Bus namespace" executed="True" result="Success" success="True" time="0.2362" asserts="0" description="Validating the Service Bus namespace">
+            <results>
+              <test-case description="The Service Bus is in the right resource group" name="Validating the Service Bus namespace.The Service Bus is in the right resource group" time="0.0148" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="The Service Bus has the right name" name="Validating the Service Bus namespace.The Service Bus has the right name" time="0.011" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="The Service Bus is in the right region (Location)" name="Validating the Service Bus namespace.The Service Bus is in the right region (Location)" time="0.0096" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="All the tags are present and have the right values" name="Validating the Service Bus namespace.All the tags are present and have the right values" time="0.007" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="The Service Bus has the expected number of queues" name="Validating the Service Bus namespace.The Service Bus has the expected number of queues" time="0.0181" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Validating the queues of the Service Bus" executed="True" result="Success" success="True" time="0.6112" asserts="0" description="Validating the queues of the Service Bus">
+            <results>
+              <test-case description="Queue name is correct" name="Validating the queues of the Service Bus.Queue name is correct" time="0.0691" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="LockDuration of the queue is correct" name="Validating the queues of the Service Bus.LockDuration of the queue is correct" time="0.0142" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="DefaultMessageTimeToLive of the queue is correct" name="Validating the queues of the Service Bus.DefaultMessageTimeToLive of the queue is correct" time="0.05" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxDeliveryCount of the queue is correct" name="Validating the queues of the Service Bus.MaxDeliveryCount of the queue is correct" time="0.0589" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxSizeInMegabytes of the queue is correct" name="Validating the queues of the Service Bus.MaxSizeInMegabytes of the queue is correct" time="0.0233" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="RequiresDuplicateDetection of the queue is correct" name="Validating the queues of the Service Bus.RequiresDuplicateDetection of the queue is correct" time="0.0155" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Queue name is correct" name="Validating the queues of the Service Bus.Queue name is correct" time="0.0108" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="LockDuration of the queue is correct" name="Validating the queues of the Service Bus.LockDuration of the queue is correct" time="0.0147" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="DefaultMessageTimeToLive of the queue is correct" name="Validating the queues of the Service Bus.DefaultMessageTimeToLive of the queue is correct" time="0.018" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxDeliveryCount of the queue is correct" name="Validating the queues of the Service Bus.MaxDeliveryCount of the queue is correct" time="0.0133" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxSizeInMegabytes of the queue is correct" name="Validating the queues of the Service Bus.MaxSizeInMegabytes of the queue is correct" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="RequiresDuplicateDetection of the queue is correct" name="Validating the queues of the Service Bus.RequiresDuplicateDetection of the queue is correct" time="0.0101" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Queue name is correct" name="Validating the queues of the Service Bus.Queue name is correct" time="0.0086" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="LockDuration of the queue is correct" name="Validating the queues of the Service Bus.LockDuration of the queue is correct" time="0.0083" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="DefaultMessageTimeToLive of the queue is correct" name="Validating the queues of the Service Bus.DefaultMessageTimeToLive of the queue is correct" time="0.0105" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxDeliveryCount of the queue is correct" name="Validating the queues of the Service Bus.MaxDeliveryCount of the queue is correct" time="0.0093" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="MaxSizeInMegabytes of the queue is correct" name="Validating the queues of the Service Bus.MaxSizeInMegabytes of the queue is correct" time="0.0069" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="RequiresDuplicateDetection of the queue is correct" name="Validating the queues of the Service Bus.RequiresDuplicateDetection of the queue is correct" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

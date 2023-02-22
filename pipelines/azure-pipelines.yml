@@ -1,0 +1,30 @@
+# /pipelines/azure-pipelines.yml
+pool:
+  vmImage: windows-2019
+stages:
+- stage: ExecutePesterTestsAndPublishResults
+  displayName: Execute Pester tests and publish results
+
+  jobs:
+    - deployment: Deploy
+      environment: 'prod'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - task: PowerShell@2
+              displayName: "Run Pester tests"
+              inputs:
+                targetType: "inline"
+                script: |
+                  Set-Location ./Tests
+                  Invoke-Pester -CI
+                  ignoreLASTEXITCODE: true
+            
+            - task: PublishTestResults@2
+              inputs:
+                testResultsFormat: "NUnit"
+                testResultsFiles: "**/Test*.xml"
+                failTaskOnFailedTests: true
+                testRunTitle: "Confoo tests validation"
+  
